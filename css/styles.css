@@ -1,0 +1,575 @@
+:root{
+    --dark:#000;
+    --white:#fff;
+    --light-grey:#efefef;
+    --gold:#ecd5a7;
+    --green:#1f3332;
+
+    scroll-behavior: smooth;
+}
+
+.topmargin-xs{margin-top: 15px;}
+.topmargin-sm{margin-top: 30px;}
+.topmargin-lg{margin-top: 60px;}
+
+.img-fluid{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
+
+h2{
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 20px;
+}
+
+section { padding: 40px 0; }
+
+
+.navbar-brand{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+}
+
+.navbar-toggler{
+    font-size: 30px;
+    color:var(--white);
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.content-center {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.mobile-menu{
+    color: var(--dark);
+}
+
+/*CAROUSEL STYLES*/
+
+.carousel-item p{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.carousel-caption{
+    top: 55%;
+    transform: translateY(-50%);  
+
+    /*FLEX*/
+
+    display: flex !important;
+    align-items: center;
+}
+
+.carousel-caption h2{
+    font-size: 110px;
+    font-weight: 800;
+}
+
+
+/*BANNER TITLE*/
+
+.banner-title{
+    width: 360px;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    background-color: var(--white);
+    padding-top: 76px;
+}
+
+.bg-dark{
+    background-color: var(--dark) !important;
+}
+
+.navbar{
+    min-height: 3rem;
+    background: #1a1a1a;
+}
+
+.logo-brand{
+    min-width: 100px;
+    max-width: 120px;
+}
+
+
+/*CAROUSEL*/
+
+.nav-link{
+    color: var(--white) !important;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: .8rem;
+}
+
+.nav-link:hover{
+    color:#ffbe76 !important;
+    transition: 0.3s;
+}
+
+/*INTRODUCTION*/
+
+.presentation{
+    background-color: F1F1F1;
+}
+
+#presentation{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#presentation p{
+    font-style: italic;
+}
+
+/*INSIDE-OUTSIDE*/
+
+.inside{
+    background-color: #f7f1e3;
+}
+
+
+.house-images{
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 7px; 
+}
+
+.house-images a img:hover{
+    opacity: 70%;
+    transition: all 0.2s ease;
+}
+
+/*INSIDE GALLERY AND OUTSIDE GALLERY STYLES*/
+#inside-outside{background:#F5F5F5;}
+
+.container.gallery-container {
+    color: #35373a;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    margin-bottom: 40px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 120px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 10px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+/*INSIDE AND OUTSIDE-CAROUSEL*/
+
+#inside-outside-carousel{
+    display: none;
+}
+
+#inside-outside-carousel p{
+    font-weight: 600;
+    text-align: center;
+}
+
+/*NAV-ITEM-CAROUSEL*/
+
+.nav-item-carousel{
+    display: none;
+}
+
+
+/*PORTFOLIO*/
+
+#gallery-container{
+    text-align: center;
+    background-color: #f7f1e3;
+}
+
+.gallery-title h2{
+    margin-top: 20px;
+}
+
+#gallery{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows:100px 300px;
+    grid-gap:10px;
+    grid-auto-flow: dense;
+}
+
+.gallery-item{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.gallery-item .image{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.gallery-item .image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position:50% 50%;
+    cursor:pointer;
+    transition:.5s ease-in-out;
+}
+.gallery-item:hover .image img{
+    transform:scale(1.5);
+}
+
+.gallery-item .text{
+    opacity:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+    font-size:25px;
+    pointer-events:none;
+    z-index:4;
+    transition: .3s ease-in-out;
+   /*  -webkit-backdrop-filter: blur(5px) saturate(1.8);
+    backdrop-filter: blur(5px) saturate(1.8); */
+}
+
+.gallery-item:hover .text{
+    opacity:1;
+    animation: move-down .3s linear;
+    padding:1em;
+    width:100%;
+}
+
+.w-1{
+    grid-column: span 1;
+}
+.w-2{
+    grid-column: span 2;
+}
+.w-3{
+    grid-column: span 3;
+}
+.w-4{
+    grid-column: span 4;
+}
+.w-5{
+    grid-column: span 5;
+}
+.w-6{
+    grid-column: span 6;
+}
+
+.h-1{
+    grid-row: span 1;
+}
+.h-2{
+    grid-row: span 2;
+}
+.h-3{
+    grid-row: span 3;
+}
+.h-4{
+    grid-row: span 4;
+}
+.h-5{
+    grid-row: span 5;
+}
+.h-6{
+    grid-row: span 6;
+}
+
+/*PRICING*/
+#pricing{background: #F5F5F5;}
+
+#pricing p{
+    font-style: italic;
+}
+
+.pricing-container{
+   margin: 15px 0; 
+}
+
+.plans{
+    padding: 50px 80px;
+    border-radius: 2px;
+    min-width: 450px;
+}
+
+.plan-light:hover{
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.plan-dark:hover{
+    background-color: #fff;
+    cursor: pointer;
+    color: #000;
+    transition: 0.5s ease-in-out;
+}
+
+.plans ul{
+    list-style: square;
+}
+
+.plans h2{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.plans span{
+    font-size: 20px;
+}
+
+.plan-light{
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.plan-dark{
+    background: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    color: #fff;
+}
+
+.temporadabaja{background: #3498db !important;}
+.temporadaalta{background: #f1c40f !important;}
+
+/*OTHER SITES*/
+
+#other-sites{
+    background: #FFF;
+}
+
+#other-sites .item h3{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/*FOOTER*/
+
+footer { 
+    text-align: center;
+    background: #1a1a1a;
+}
+
+footer span{
+    color: #888;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none !important;
+}
+
+footer p{
+    color: #fff;
+}
+
+footer ion-icon{
+    color: #fff;
+    font-size: 40px;
+    margin-top: 20px;
+    margin: 10px;
+}
+
+#footer .container h1{
+    color: #fff;
+}
+#footer .footer-description p{
+    font-style: italic;
+}
+
+.footer-copyright{
+    background: rgb(43, 41, 41);
+}
+
+.footer-copyright a:hover{
+    color: #fff;
+}
+
+.footer-limit{
+    background: #fff;
+}
+
+@media screen and (max-width:500px){
+    #gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .w-1,.w-2,.w-3,.w-4,.w-5,.w-6{
+        grid-column:span 1;
+    }
+}
+
+
+@keyframes move-down{
+
+    0%{
+        top:10%;
+    }
+    50%{
+        top:35%;
+    }
+    100%{
+        top:50%;
+    }
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 575.98px) { 
+
+    /*NAV-ITEM-REPLACE*/
+
+    .nav-item-replace{
+        display: none;
+    }
+
+    /*NAV-ITEM-CAROUSEL*/
+
+    .nav-item-carousel{
+        display: block;
+    }
+    
+    /*Carousel styles*/
+
+    .carousel-item img{
+        min-height: 200px;
+    }
+
+    .carousel-caption h2{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .carousel-item p{
+        font-size: 12px;
+    }
+
+    /*BANNER IMG*/
+
+    .banner-img{
+        width: 10em;
+    }
+
+    /*INSIDE AND OUTSIDE*/
+
+    #inside-outside{
+        display: none;
+    }
+
+    /*INSIDE AND OUTSIDE-CAROUSEL*/
+
+    #inside-outside-carousel{
+        display: block;
+    }
+
+    /*Pricing*/
+
+    .plans{
+        min-width: unset;
+        padding: 40px;
+    }
+
+    .map-loc{
+        margin-bottom: 70px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    /*BANNER IMG*/
+
+    .banner-img{
+        width: 10em;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+    .plans{min-width: unset;padding: 40px 20px;}
+
+     /*CAROUSEL HEIGHT ADAPTATION*/
+
+     .carousel-item img{
+        min-height: 500px;
+    }
+
+    /*BANNER IMG*/
+
+    .banner-img{
+        width: 15em;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+    /*BANNER IMG*/
+
+    .banner-img{
+        width: 17em;
+    }
+
+
+}
+
+
+/* @media (min-width: 1200px) { ... }  */
