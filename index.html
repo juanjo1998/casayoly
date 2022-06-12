@@ -5,42 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Ionicons-->
-    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+ <!--BOOTSTRAP.MIN.CSS-->
 
-    <!--Favicon-->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <link rel="icon" href="images/logo_fav.png">
+ <!--ANIMATION LIBRARY-->
 
-    <!--BOOTSTRAP.MIN.CSS-->
+ <link rel="stylesheet" href="css/bounce.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+ <!--STYLES CSS-->
+ <link rel="stylesheet" href="css/styles.css">
 
-    <!--ANIMATION LIBRARY-->
+ <!--MDB-->
 
-    <link rel="stylesheet" href="css/bounce.css">
+ <!-- <link rel="stylesheet" href="css/bootstrapMD.min.css"> -->
 
-    <!--STYLES CSS-->
-    <link rel="stylesheet" href="css/styles.css">
+ <!--GOOGLE FONTS-->
 
-    <!--GOOGLE FONTS-->
+ <link
+     href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800;900&family=Roboto:wght@300;400;700;900&display=swap"
+     rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800;900&family=Roboto:wght@300;400;700;900&display=swap"
-        rel="stylesheet">
+ <!--OWL CAROUSEL-->
 
-    <!--SCROLLREVEAL-->
+ <link rel="stylesheet" type="text/css" href="owl/dist/assets/owl.carousel.min.css">
+ <link rel="stylesheet" type="text/css" href="owl/dist/assets/owl.theme.default.min.css">
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+ <!--SCROLLREVEAL-->
 
-    <!--BAGUETTE CLOUDFARE-->
+ <script src="https://unpkg.com/scrollreveal"></script>
 
-    <link rel="stylesheet" href="css/baguetteBox.min.css">
+ <!--JQUERY-SMOOTH-->
 
-    <!-- FECHAS DINAMICAS -->
+ <script src="js/smooth-scroll.min.js"></script>
 
-    <!-- <script async src="https://js.convertflow.co/production/websites/18491.js"></script> -->
+  <!--SMOOTH-->
+
+ <script src="js/smooth.js"></script>
+
+ <!--BAGUETTE CLOUDFARE-->
+
+ <link rel="stylesheet" href="css/baguetteBox.min.css">
 
     <title>Casayoly | Web</title>
 </head>
@@ -51,7 +56,7 @@
 
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="https://www.casayoly.com"><img src="images/logo.svg"
+        <a class="navbar-brand" href="/"><img src="images/logo.svg"
                 class="logo-brand u--bounceIn" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,28 +66,29 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" data-scroll href="http://192.168.1.8:5500/index.html">Inicio</a>
+                    <a class="nav-link" href="/">Inicio</a>
                 </li>
                 <li class="nav-item nav-item-replace">
-                    <a class="nav-link" data-scroll href="#inside">Interior</a>
+                    <a class="nav-link" href="#inside">Interior</a>
                 </li>               
                 <li class="nav-item nav-item-replace">
-                    <a class="nav-link" data-scroll href="#outside">Exterior</a>
+                    <a class="nav-link" href="#outside">Exterior</a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link" data-scroll href="#gallery-container">Portafolio</a>
+                    <a class="nav-link" href="#gallery-container">Portafolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-scroll href="#pricing">Precios</a>
+                    <a class="nav-link" href="#pricing">Precios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-scroll href="#footer">Contacto</a>
+                    <a class="nav-link" href="#footer">Contacto</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-    
+
+
 <!--MAIN CAROUSEL-->
 
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -407,11 +413,11 @@
                 <div class="pricing-container">
                     <div class="plans plan-dark">
                         <h4>Hospedaje/noche</h4>
-                        <h2>$450.000</h2>
+                        <h2>$600.000</h2>
                         <h4>Precios en pesos colombianos</h4>
                         <ul class="topmargin-xs">
                             <li>Deposito de 150 mil</li>
-                            <li>1-15 personas</li>
+                            <li>1-13 personas</li>
                         </ul>
                     </div>
                 </div>
@@ -420,11 +426,11 @@
                 <div class="pricing-container">
                     <div class="plans plan-light">
                         <h4>Persona adicional</h4>
-                        <h2>$30.000</h2>
+                        <h2>$50.000</h2>
                         <h4>Precios en pesos colombianos</h4>
                         <ul class="topmargin-xs">
                             <li>Valor por persona adicional</li>
-                            <li>16 o mas personas adicionales</li>
+                            <li>13 o mas personas adicionales</li>
                         </ul>
                     </div>
                 </div>
@@ -501,26 +507,43 @@
 </footer>
 <!-- Footer -->
 
-<!--BOOTSTRAP CDN-->
+<!-- Footer -->
+     
+    <!--IONICONS-->
 
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<!--  <script src="js/bootstrap.min.js.map" type="application/json"></script> -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
-<!--BAGUETTEBOX MIN.JS-->
-<script src="js/baguetteBox.min.js"></script>
+    <!--BOOTSTRAP CDN-->
 
-<!--BAGUETTE SCRIPT-->
-<script src="js/baguette-script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-<!--SCROLLREVEAL-->
+    <!--MDB-->
 
-<script src="js/reveal.js"></script>
+    <!-- <script src="bootstrapMD.min.js"></script> -->
 
-<!--NAVBAR-COLLAPSE-->
+    <!--BAGUETTEBOX MIN.JS-->
+    <script src="js/baguetteBox.min.js"></script>
 
-<script src="js/navbar-collapse.js"></script>
+    <!--BAGUETTE SCRIPT-->
+    <script src="js/baguette-script.js"></script>
+
+    <!--OWL CAROUSEL MIN.JS-->
+
+    <script src="owl/dist/owl.carousel.min.js"></script>
+
+    <!--OWL SCRIPT CONFIG-->
+
+    <script src="js/owl-script.js"></script>
+
+    <!--SCROLLREVEAL-->
+    
+    <script src="js/reveal.js"></script>
+
+    <!--NAVBAR-COLLAPSE-->
+
+    <script src="js/navbar-collapse.js"></script>
 
 </body>
 
